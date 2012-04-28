@@ -65,10 +65,22 @@ header, #main
 header
   padding: 30px 0
   #profile
-    height: 150px
+    height: 160px
     float: left
     +border-radius(15px)
     margin-right: 20px
+  dl
+    margin: 13px 0
+    dt, dd
+      display: inline-block
+      vertical-align: top
+    dd
+      margin-right: 30px
+      font-style: italic
+    dt
+      text-align: right
+      font-family: Arial
+      font-weight: bold
 body
   font-family: "Oxygen", "Helvetica", sans-serif
   font-size: 14px
@@ -84,7 +96,7 @@ h3
 h3, h4, h5
   font-family: "Signika", "Arial", serif
 h1
-  font-size: 50px
+  font-size: 60px
 h2
   font-size: 30px
 h3
@@ -102,6 +114,8 @@ h6
     margin: 10px 50px
     padding: 30px 20px
     border-bottom: 1px solid #EFEFEF
+    &:hover
+      background: #F9F9F9
   h4, h5
     display: inline-block
   h4

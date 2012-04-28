@@ -631,7 +631,7 @@ header {
 }
 /* line 67, ../sass/screen.sass */
 header #profile {
-  height: 150px;
+  height: 160px;
   float: left;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -640,95 +640,119 @@ header #profile {
   border-radius: 15px;
   margin-right: 20px;
 }
-
 /* line 72, ../sass/screen.sass */
+header dl {
+  margin: 13px 0;
+}
+/* line 74, ../sass/screen.sass */
+header dl dt, header dl dd {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 77, ../sass/screen.sass */
+header dl dd {
+  margin-right: 30px;
+  font-style: italic;
+}
+/* line 80, ../sass/screen.sass */
+header dl dt {
+  text-align: right;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+/* line 84, ../sass/screen.sass */
 body {
   font-family: "Oxygen", "Helvetica", sans-serif;
   font-size: 14px;
   font-height: 16px;
 }
 
-/* line 76, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 h1 {
   font-family: "Spicy Rice", "Helvetica";
 }
 
-/* line 78, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 h2 {
   font-family: "Gochi Hand", "Helvetica";
 }
 
-/* line 80, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 h3 {
   letter-spacing: 0.06em;
   border-bottom: 1px dotted gray;
   padding: 6px 0;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 h3, h4, h5 {
   font-family: "Signika", "Arial", serif;
 }
 
-/* line 86, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
-/* line 88, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 h2 {
   font-size: 30px;
 }
 
-/* line 90, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 h3 {
   font-family: "Spicy Rice", "Helvetica";
   font-size: 35px;
 }
 
-/* line 93, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 h4 {
   font-size: 16px;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 h5 {
   font-size: 17px;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 h6 {
   font-size: 36px;
   line-height: 45px;
 }
 
-/* line 101, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 #experience li {
   margin: 10px 50px;
   padding: 30px 20px;
   border-bottom: 1px solid #efefef;
 }
-/* line 105, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
+#experience li:hover {
+  background: #f9f9f9;
+}
+/* line 119, ../sass/screen.sass */
 #experience h4, #experience h5 {
   display: inline-block;
 }
-/* line 107, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #experience h4 {
   margin-right: 10px;
 }
-/* line 109, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 #experience h5 {
   background: #ffffde;
   font-size: 14px;
   font-style: italic;
   padding: 2px 9px;
 }
-/* line 115, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 #experience p a {
   margin-right: 10px;
 }
 
-/* line 117, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 .section {
   padding: 30px;
   border: 5px solid #e8e8e8;
