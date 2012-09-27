@@ -23,6 +23,16 @@
 		<img id="profile" src="/images/miano.jpg">
 		<h1>Bryant Miano</h1>
 		<h2>Pianist, Music Director, & Vocal Coach</h2>
+		<dl>
+			<dt>Music Experience:</dt>
+			<dd>14 yrs</dd>
+			<dt>Age:</dt>
+			<dd>24 yrs</dd>
+			<dt>Ethnicity:</dt>
+			<dd>Filipino</dd>
+			<dt>Forte:</dt>
+			<dd>Sight reading, musical direction, improv</dd>
+		</dl>
 		<h4><a href="mailto:pianomiano@gmail.com">pianomiano@gmail.com</a></h4>
   </header>
   <div id="main">
@@ -353,6 +363,8 @@
 
 
 				
+<<<<<<< HEAD
+=======
 				<li>
 					<h4>Accompanist</h4>
 					<h5>2008 - Current</h5>
@@ -371,6 +383,7 @@
 						<span>Jacksonville, FL</span>
 					</p>
 				</li>
+>>>>>>> ed088f93b82f0e4404eb2b6a4d04e04bb9db557f
 
 
 

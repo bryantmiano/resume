@@ -1,0 +1,147 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/scaffolding
+@import compass/css3
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body.bp
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+form.bp
+  +blueprint-form
+  // You'll probably want to remove the scaffolding once you start styling your site.
+  +blueprint-scaffolding
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col
+  #container
+    +container
+  #header, #footer
+    +column($blueprint-grid-columns)
+  #sidebar
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3)
+    +column($sidebar-columns)
+  #content
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3)
+    // true means it's the last column in the row
+    +column($content-columns, true)
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset"
+
+a
+  text-decoration: none
+  border-bottom: 1px dotted #00659E
+  color: #0050C7
+  display: inline-block
+  padding: 3px 0
+  &:hover
+    border-bottom: 1px dotted #3DB9FF
+    color: #1E79FF
+header, #main
+  +container
+header
+  padding: 30px 0
+  #profile
+    height: 150px
+    float: left
+    +border-radius(15px)
+    margin-right: 20px
+b
+  font-weight: bold
+p
+  margin: 15px 0
+  line-height: 24px
+  a
+    line-height: 11px
+body
+  font-family: "Oxygen", "Helvetica", sans-serif
+  font-size: 14px
+  font-height: 16px
+h1
+  font-family: "Alfa Slab One", cursive
+h2
+  font-family: "Gochi Hand", "Helvetica"
+h3
+  font-family: "Gochi Hand", "Helvetica"
+  font-size: 42px
+  line-height: 28px
+  margin: 50px 0 0
+  +text-shadow(2px 2px 0px rgba(156, 107, 107, 0.44))
+  letter-spacing: 0.06em
+  border-bottom: 1px dotted gray
+  padding: 6px 0
+  font-weight: bold
+  color: #BD0C0C
+h4, h5
+  font-family: "Signika", "Arial", serif
+h1
+  font-size: 50px
+h2
+  font-size: 30px
+h4
+  font-size: 16px
+h5
+  font-size: 17px
+h6
+  font-size: 28px
+  line-height: 39px
+  font-weight: bold
+#experience
+  li
+    +box-shadow(0px -1px 5px rgba(0, 0, 0, 0.22) inset)
+    margin: 10px 0px
+    padding: 30px 20px
+    border-bottom: 1px solid #C4C4C4
+    background: #F8F8F8
+    &:hover 
+      img
+        +opacity(1)
+    img
+      margin-top: -10px
+      float: right
+      height: 105px
+      +border-radius(10px)
+      +opacity(.6)
+      +transition-property()
+      +transition-duration(.5s)
+  h4, h5
+    display: inline-block
+  h4
+    margin-right: 10px
+    color: gray
+  h5
+    background: #FFFFDE
+    font-size: 14px
+    font-style: italic
+    padding: 2px 9px
+  p
+    a
+      margin-right: 10px
+.section
+  margin: 0 0 50px
+  padding: 0 30px
+  border: 5px solid #E8E8E8
+  +border-radius(15px)
