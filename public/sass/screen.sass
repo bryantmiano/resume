@@ -53,13 +53,13 @@ body.two-col
 
 a
   text-decoration: none
-  border-bottom: 1px dotted #F43E9E
-  color: #F43E9E
+  border-bottom: 1px dotted #00659E
+  color: #0050C7
   display: inline-block
   padding: 3px 0
   &:hover
-    border-bottom: 1px dotted #991F60
-    color: #991F60
+    border-bottom: 1px dotted #3DB9FF
+    color: #1E79FF
 header, #main
   +container
 header
@@ -69,43 +69,69 @@ header
     float: left
     +border-radius(15px)
     margin-right: 20px
+b
+  font-weight: bold
+p
+  margin: 15px 0
+  line-height: 24px
+  a
+    line-height: 11px
 body
   font-family: "Oxygen", "Helvetica", sans-serif
   font-size: 14px
   font-height: 16px
 h1
-  font-family: "Spicy Rice", "Helvetica"
+  font-family: "Alfa Slab One", cursive
 h2
   font-family: "Gochi Hand", "Helvetica"
 h3
+  font-family: "Gochi Hand", "Helvetica"
+  font-size: 42px
+  line-height: 28px
+  margin: 50px 0 0
+  +text-shadow(2px 2px 0px rgba(156, 107, 107, 0.44))
   letter-spacing: 0.06em
   border-bottom: 1px dotted gray
   padding: 6px 0
-h3, h4, h5
+  font-weight: bold
+  color: #BD0C0C
+h4, h5
   font-family: "Signika", "Arial", serif
 h1
   font-size: 50px
 h2
   font-size: 30px
-h3
-  font-family: "Spicy Rice", "Helvetica"
-  font-size: 35px
 h4
   font-size: 16px
 h5
   font-size: 17px
 h6
-  font-size: 36px
-  line-height: 45px
+  font-size: 28px
+  line-height: 39px
+  font-weight: bold
 #experience
   li
-    margin: 10px 50px
+    +box-shadow(0px -1px 5px rgba(0, 0, 0, 0.22) inset)
+    margin: 10px 0px
     padding: 30px 20px
-    border-bottom: 1px solid #EFEFEF
+    border-bottom: 1px solid #C4C4C4
+    background: #F8F8F8
+    &:hover 
+      img
+        +opacity(1)
+    img
+      margin-top: -10px
+      float: right
+      height: 105px
+      +border-radius(10px)
+      +opacity(.6)
+      +transition-property()
+      +transition-duration(.5s)
   h4, h5
     display: inline-block
   h4
     margin-right: 10px
+    color: gray
   h5
     background: #FFFFDE
     font-size: 14px
@@ -115,6 +141,7 @@ h6
     a
       margin-right: 10px
 .section
-  padding: 30px
+  margin: 0 0 50px
+  padding: 0 30px
   border: 5px solid #E8E8E8
   +border-radius(15px)
