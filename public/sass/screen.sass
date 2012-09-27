@@ -53,22 +53,50 @@ body.two-col
 
 a
   text-decoration: none
-  border-bottom: 1px dotted #00659E
-  color: #0050C7
+  border-bottom: 1px dotted #E27A40
+  color: #E71919
   display: inline-block
   padding: 3px 0
   &:hover
     border-bottom: 1px dotted #3DB9FF
-    color: #1E79FF
-header, #main
+    color: #F55
+.container, #main
   +container
 header
-  padding: 30px 0
+  background: rgba(255, 255, 255, 0.52)
+  +box-shadow(3px 1px 40px black)
+  margin: 0 0 30px
+  position: relative
+  z-index: 2000
+  padding: 17px 0 12px
+  +opacity(.8)
+  +transition-property()
+  +transition-duration(.3s)
+  &:hover
+    +opacity(1)
   #profile
-    height: 150px
+    height: 131px
     float: left
     +border-radius(15px)
     margin-right: 20px
+  .nav
+    font-family: "Oxygen", Arial
+    li
+      float: left
+      a
+        +box-shadow(3px 3px 0px rgba(119, 4, 4, 0.18))
+        +border-radius(5px)
+        display: inline-block
+        background: #1F5B7C
+        +background-image(linear-gradient(#E71919 78%, #AA2323))
+        color: white
+        padding: 7px 20px
+        border: 1px solid #7C0505
+        font-weight: bold
+        font-size: 12px
+        margin: 15px 20px 0 0
+        &:hover
+          background: #F55
 b
   font-weight: bold
 p
@@ -81,52 +109,71 @@ body
   font-size: 14px
   font-height: 16px
 h1
-  font-family: "Alfa Slab One", cursive
+  font-family: "Syncopate"
+  font-weight: bold
+  +text-shadow(1px 1px 0 rgba(255, 255, 255, 0.53))
 h2
+  +text-shadow(0px -1px 0px #484D68)
   font-family: "Gochi Hand", "Helvetica"
+  color: white
+  font-weight: bold
 h3
   font-family: "Gochi Hand", "Helvetica"
   font-size: 42px
   line-height: 28px
-  margin: 50px 0 0
-  +text-shadow(2px 2px 0px rgba(156, 107, 107, 0.44))
+  margin: 100px 0 0
+  +text-shadow(1px -1px 0px #484D68)
   letter-spacing: 0.06em
-  border-bottom: 1px dotted gray
+  border-bottom: 1px dotted white
+  +box-shadow(0 1px #BDC1C5)
   padding: 6px 0
   font-weight: bold
-  color: #BD0C0C
+  color: #1881AC
+  clear: left
+  &:nth-child(1)
+    margin: 30px 0 0
 h4, h5
   font-family: "Signika", "Arial", serif
 h1
   font-size: 50px
 h2
-  font-size: 30px
+  font-size: 31px
 h4
-  font-size: 16px
+  font-size: 13px
 h5
   font-size: 17px
 h6
   font-size: 28px
   line-height: 39px
   font-weight: bold
-#experience
+#videos
+  overflow: hidden
   li
-    +box-shadow(0px -1px 5px rgba(0, 0, 0, 0.22) inset)
-    margin: 10px 0px
-    padding: 30px 20px
-    border-bottom: 1px solid #C4C4C4
-    background: #F8F8F8
-    &:hover 
+    float: left
+    margin: 10px 0
+    &:nth-child(1n)
+      margin-right: 20px
+#experience
+  ul
+    li
+      +box-shadow(0px -1px 5px rgba(0, 0, 0, 0.22) inset)
+      +border-right-radius(30px)
+      margin: 10px 0px
+      padding: 30px 20px
+      border-bottom: 1px solid #C4C4C4
+      border-left: 7px solid #CECECE
+      background: rgba(248, 248, 248, 0.75)
+      &:hover 
+        img
+          +opacity(1)
       img
-        +opacity(1)
-    img
-      margin-top: -10px
-      float: right
-      height: 105px
-      +border-radius(10px)
-      +opacity(.6)
-      +transition-property()
-      +transition-duration(.5s)
+        margin-top: -10px
+        float: right
+        height: 105px
+        +border-radius(10px)
+        +opacity(.6)
+        +transition-property()
+        +transition-duration(.5s)
   h4, h5
     display: inline-block
   h4
@@ -141,7 +188,14 @@ h6
     a
       margin-right: 10px
 .section
+  background: rgba(255, 255, 255, 0.89)
   margin: 0 0 50px
   padding: 0 30px
-  border: 5px solid #E8E8E8
+  border: 5px solid white
   +border-radius(15px)
+
+#big-video-wrap
+  z-index: 300
+#main
+  position: relative
+  z-index: 1000
