@@ -2,11 +2,13 @@
 @import blueprint/reset
 // To configure blueprint, edit the partials/base.sass file.
 @import partials/base
+@import partials/animate
 // Import all the default blueprint modules so that we can access their mixins.
 @import blueprint
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 @import compass/css3
+
 
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
@@ -51,6 +53,8 @@ body.two-col
 
 @import "compass/reset"
 
+body
+  background: #051720
 a
   text-decoration: none
   border-bottom: 1px dotted #E27A40
@@ -62,6 +66,8 @@ a
     color: #F55
 .container, #main
   +container
+#main
+  margin: 30px auto
 header
   background: rgba(255, 255, 255, 0.52)
   +box-shadow(3px 1px 40px black)
@@ -70,14 +76,14 @@ header
   z-index: 2000
   padding: 17px 0 12px
   +opacity(.8)
-  +transition-property()
+  +transition-property(opacity)
   +transition-duration(.3s)
   &:hover
     +opacity(1)
   #profile
     height: 131px
     float: left
-    +border-radius(15px)
+    +border-radius(50%)
     margin-right: 20px
   .nav
     font-family: "Oxygen", Arial
@@ -121,7 +127,6 @@ h3
   font-family: "Gochi Hand", "Helvetica"
   font-size: 42px
   line-height: 28px
-  margin: 100px 0 0
   +text-shadow(1px -1px 0px #484D68)
   letter-spacing: 0.06em
   border-bottom: 1px dotted white
@@ -130,8 +135,6 @@ h3
   font-weight: bold
   color: #1881AC
   clear: left
-  &:nth-child(1)
-    margin: 30px 0 0
 h4, h5
   font-family: "Signika", "Arial", serif
 h1
@@ -180,22 +183,56 @@ h6
     margin-right: 10px
     color: gray
   h5
+    +border-radius(30px)
+    +box-shadow(0px 1px 1px rgba(0, 0, 0, 0.39))
+    border: 1px solid #C4C4C4
+    text-align: center
+    color: #3D3D3D
     background: #FFFFDE
-    font-size: 14px
+    font-size: 12px
     font-style: italic
     padding: 2px 9px
   p
     a
       margin-right: 10px
+#biography
+  h3  
+    margin-top: -17px
 .section
   background: rgba(255, 255, 255, 0.89)
   margin: 0 0 50px
   padding: 0 30px
   border: 5px solid white
   +border-radius(15px)
-
+.sect
+  //+box-shadow(0px 16px 16px -9px rgba(4, 52, 90, 0.26))
+  //border-top: 2px solid #C5E1FF
+  //border-bottom: 1px solid #D2D5D6
+  padding: 40px 0
 #big-video-wrap
   z-index: 300
 #main
   position: relative
   z-index: 1000
+#contact
+  overflow: hidden
+  ol
+    margin-left: 181px
+  li  
+    float: left
+    margin-right: 30px
+    img
+      height: 100px
+    span
+      display: block
+      text-align: center
+      font-weight: bold
+    a
+      text-decoration: none
+      border: none
+      color: black
+      text-transform: uppercase
+      &:hover
+        span  
+          color: #E71919
+          
